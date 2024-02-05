@@ -16,6 +16,9 @@ class _IntegrateWebViewState extends State<IntegrateWebView> {
     _controler.loadRequest(
         Uri.parse('https://vinhpna1c.github.io/asteroid_avoider_web/'));
     _controler.setJavaScriptMode(JavaScriptMode.unrestricted);
+    _controler.setOnConsoleMessage((message) {
+      print("Message from console: ${message.message}");
+    });
     super.initState();
   }
 

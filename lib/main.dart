@@ -3,6 +3,7 @@ import 'package:why_kid_test/pages/home_page.dart';
 import 'package:why_kid_test/pages/test_game_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: TestGamePage(),
+      home: HomePage(),
     );
   }
 }
